@@ -12,7 +12,7 @@ require("catppuccin").setup({
 		mauve		= "#B481F0",
 		peach		= "#FE640B",
 		pink		= "#944D95",
-		red		= "#F9555F",
+		red         = "#F9555F",
 		rosewater	= "#DC8A78",
 		teal		= "#1D9EE7",
 		yellow		= "#FEF02A",
