@@ -44,5 +44,6 @@ lspconfig.lua_ls.setup({
 lspconfig.phpactor.setup({})
 lspconfig.clangd.setup({})
 lspconfig.pylsp.setup({})
+lspconfig.gopls.setup({})
 
 vim.diagnostic.config({ virtual_text = true })
