@@ -1,6 +1,6 @@
 -- https://github.com/catppuccin/nvim
 require("catppuccin").setup({
-    flavour = "macchiato", -- latte, frappe, macchiato, mocha
+    flavour = "mocha", -- latte, frappe, macchiato, mocha
     no_italic = true, -- Force no italic
     no_bold = false, -- Force no bold
     no_underline = false, -- Force no underline
