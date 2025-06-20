@@ -23,13 +23,16 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v3.x'}
 
 Plug 'ThePrimeagen/vim-be-good'
-
+" Live preview: https://github.com/brianhuster/live-preview.nvim
+Plug 'brianhuster/live-preview.nvim'
 
 " If you don't have nodejs and yarn
 " use pre build, add 'vim-plug' to the filetype list so vim-plug can update this plugin
 " see: https://github.com/iamcco/markdown-preview.nvim/issues/50
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
+" https://github.com/NeogitOrg/neogit?tab=readme-ov-file
+Plug 'NeogitOrg/neogit'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
