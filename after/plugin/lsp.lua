@@ -1,5 +1,5 @@
 local lsp_zero = require('lsp-zero')
-local lspconfig = require('lspconfig')
+-- local lspconfig = require('lspconfig')
 
 lsp_zero.on_attach(function(client, bufnr)
     local opts = {buffer = bufnr, remap = false}
@@ -19,7 +19,7 @@ end)
 require('mason').setup({})
 
 -- Config taken from: https://github.com/neovim/neovim/issues/21686
-lspconfig.lua_ls.setup({
+vim.lsp.config('lua_ls', {
     settings = {
         Lua = {
             diagnostics = {
@@ -37,13 +37,13 @@ lspconfig.lua_ls.setup({
             telemetry = {
                 enable = false,
             },
-        }
-    }
+        },
+    },
 })
 
-lspconfig.phpactor.setup({})
-lspconfig.clangd.setup({})
-lspconfig.pylsp.setup({})
-lspconfig.gopls.setup({})
+vim.lsp.enable('phpactor')
+vim.lsp.enable('clangd')
+vim.lsp.enable('pylsp')
+vim.lsp.enable('gopls')
 
 vim.diagnostic.config({ virtual_text = true })
